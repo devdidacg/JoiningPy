@@ -22,7 +22,7 @@ Lightweight and easy to extend with new packages
 
 # Installation
 
-With Git (Recomended):
+Git (Recomended):
 ```bash
 git clone "https://github.com/devdidacg/JoiningPy"
 ```
@@ -37,4 +37,20 @@ Source Code:
 
 [Releases](https://github.com/devdidacg/JoiningPy/releases)
 
+![Download Source Image](https://github.com/devdidacg/JoiningPy/blob/main/images/Source%20Code%20Image.png?raw=true)
 
+# Get Started
+
+Git:
+
+Open terminal, and write:
+
+```bash
+python main.py
+```
+
+Installer (Windows):
+
+Click on the installer file, and install JoiningPy.
+
+![Installer Image](https://github.com/devdidacg/JoiningPy/blob/main/images/Installer%20Image%20JoiningPy.png?raw=true)
