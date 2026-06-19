@@ -102,7 +102,11 @@ Libraries are grouped by category. Each section can be expanded and extended eas
 git clone https://github.com/devdidacg/JoiningPy
 cd JoiningPy
 python main.py
-Windows Installer
+```
+
+---
+
+### Windows Installer
 
 Download the latest release:
 
@@ -110,41 +114,73 @@ https://github.com/devdidacg/JoiningPy/releases
 
 Steps:
 
-Download the installer
-Run the setup
-Open JoiningPy
-Screenshots
-Installer
+1. Download the installer
+2. Run the setup
+3. Open JoiningPy
 
-Installation Process
+---
 
-Source Code Download
+## Screenshots
 
-Getting Started
+### Installer
+
+![Installer](https://github.com/devdidacg/JoiningPy/blob/main/images/download-installer.png?raw=true)
+
+### Installation Process
+
+![Installation](https://github.com/devdidacg/JoiningPy/blob/main/images/Installer%20Image%20JoiningPy.png?raw=true)
+
+### Source Code Download
+
+![Source Code](https://github.com/devdidacg/JoiningPy/blob/main/images/Source%20Code%20Image.png?raw=true)
+
+---
+
+## Getting Started
 
 When you launch JoiningPy, you will see:
 
+```text
 [JoiningPy] (Ready) version by author
 
 Hello, Ready to start? (y/n)
+```
 
 Then choose an option:
 
+```text
 install
 remove
 exit
-Usage Example
-Installing packages
+```
+
+---
+
+## Usage Example
+
+### Installing packages
 
 Input multiple numbers separated by commas:
 
+```text
 1,2,3
+```
 
 JoiningPy will automatically install selected libraries.
 
-Removing packages
+---
+
+### Removing packages
+
+```text
 1,5,7
-Project Structure
+```
+
+---
+
+## Project Structure
+
+```text
 JoiningPy/
 │
 ├── main.py
@@ -157,41 +193,61 @@ JoiningPy/
 │
 ├── README.md
 └── LICENSE
-Requirements
-Python 3.10+
-pip installed
-Windows recommended
+```
+
+---
+
+## Requirements
+
+- Python 3.10+
+- pip installed
+- Windows recommended
 
 Check version:
 
+```bash
 python --version
-Contributing
+```
+
+---
+
+## Contributing
 
 Contributions are welcome.
 
 You can help by:
 
-Adding new libraries
-Improving interface
-Fixing bugs
-Optimizing installation logic
-Improving documentation
+- Adding new libraries
+- Improving interface
+- Fixing bugs
+- Optimizing installation logic
+- Improving documentation
 
 Workflow:
 
+```
 fork → clone → edit → commit → pull request
-Roadmap
-Package search system
-Version selection for libraries
-Dependency validation
-Linux and macOS support
-Configuration file support
-Progress indicators
-Better UI navigation
-License
+```
+
+---
+
+## Roadmap
+
+- Package search system
+- Version selection for libraries
+- Dependency validation
+- Linux and macOS support
+- Configuration file support
+- Progress indicators
+- Better UI navigation
+
+---
+
+## License
 
 This project is licensed under the MIT License.
 
+```
 MIT License
 
 Copyright (c) 2026 devdidacg
@@ -201,6 +257,10 @@ of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction...
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-Notes
+```
+
+---
+
+## Notes
 
 JoiningPy is designed to make Python package management easier, faster, and more structured using a simple terminal interface.
