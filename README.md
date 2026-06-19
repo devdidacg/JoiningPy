@@ -26,3 +26,9 @@ With Git (Recomended):
 ```bash
 git clone "https://github.com/devdidacg/JoiningPy"
 ```
+
+Installer (Windows):
+
+[Releases](https://github.com/devdidacg/JoiningPy/releases)
+
+![Download Image](ruta-o-url-de-la-imagen.png)
