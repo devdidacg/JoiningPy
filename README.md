@@ -1,56 +1,119 @@
 # JoiningPy
 
-JoiningPy is a terminal-based package management tool built with Python that provides a simple and interactive way to install or remove multiple Python libraries without manually typing pip commands in the console. Through an easy-to-use menu system, users can select packages by entering numbers instead of remembering package names or command syntax.
+JoiningPy is a terminal-based Python package management tool that allows users to install and remove multiple Python libraries through an interactive menu system. It removes the need to manually type pip commands by providing a guided interface for package management directly in the terminal.
 
-The application includes a startup screen, navigation menus, confirmation prompts, and automated execution of installation or removal processes directly from the terminal. Users can choose multiple libraries at once using comma-separated selections, making bulk package management faster and more convenient.
+The project is designed to simplify dependency management, especially for users who prefer a structured menu instead of command-line syntax. It supports bulk operations, confirmation prompts, and automated execution of installation and removal tasks.
 
-JoiningPy currently supports popular Python libraries across multiple categories, including data science, machine learning, web development, automation, computer vision, testing, visualization, and game development. Some supported packages include Pandas, NumPy, Requests, Matplotlib, TensorFlow, PyTorch, Flask, Django, OpenCV, SQLAlchemy, PyGame, Jupyter, Plotly, and many others.
+---
 
-The project is designed for beginners and users who prefer a guided terminal experience instead of memorizing package manager commands. By automating installation and removal workflows, JoiningPy reduces repetitive tasks and creates a more user-friendly environment for managing Python dependencies.
+## Features
 
-Main features include:
+- Interactive terminal-based menu system
+- Install multiple Python libraries at once
+- Remove multiple Python libraries at once
+- Number-based selection system
+- Bulk selection using comma-separated input
+- Confirmation before executing actions
+- Lightweight and easy to use
+- Easy to extend with new libraries
 
-Interactive terminal interface
-Install multiple libraries at once
-Remove multiple libraries at once
-Number-based package selection system
-Confirmation prompts before actions
-Automatic execution of package commands
-Support for popular Python ecosystems
-Simple navigation and startup flow
-Lightweight and easy to extend with new packages
+---
 
-# Installation
+## Supported Libraries
 
-Git (Recomended):
+JoiningPy organizes libraries into categories. You can expand each section and easily add new packages.
+
+<details>
+<summary>Data Science</summary>
+
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Plotly  
+- Seaborn  
+
+<!-- Add more here -->
+
+</details>
+
+<details>
+<summary>Machine Learning & AI</summary>
+
+- Scikit-learn  
+- TensorFlow  
+- PyTorch  
+- Keras  
+
+<!-- Add more here -->
+
+</details>
+
+<details>
+<summary>Web Development</summary>
+
+- Flask  
+- Django  
+
+<!-- Add more here -->
+
+</details>
+
+<details>
+<summary>Automation & Networking</summary>
+
+- Requests  
+- Selenium  
+- BeautifulSoup  
+
+<!-- Add more here -->
+
+</details>
+
+<details>
+<summary>Computer Vision & Media</summary>
+
+- OpenCV  
+- Pillow  
+
+<!-- Add more here -->
+
+</details>
+
+<details>
+<summary>Database</summary>
+
+- SQLAlchemy  
+
+<!-- Add more here -->
+
+</details>
+
+<details>
+<summary>Development Tools</summary>
+
+- Pytest  
+- Jupyter  
+
+<!-- Add more here -->
+
+</details>
+
+<details>
+<summary>Game Development</summary>
+
+- PyGame  
+
+<!-- Add more here -->
+
+</details>
+
+---
+
+## Installation
+
+### Option 1: Git (Recommended)
+
+Clone the repository:
+
 ```bash
-git clone "https://github.com/devdidacg/JoiningPy"
-```
-
-Installer (Windows):
-
-[Releases](https://github.com/devdidacg/JoiningPy/releases)
-
-![Download Installer Image](https://github.com/devdidacg/JoiningPy/blob/main/images/download-installer.png?raw=true)
-
-Source Code: 
-
-[Releases](https://github.com/devdidacg/JoiningPy/releases)
-
-![Download Source Image](https://github.com/devdidacg/JoiningPy/blob/main/images/Source%20Code%20Image.png?raw=true)
-
-# Get Started
-
-Git:
-
-Open terminal, and write:
-
-```bash
-python main.py
-```
-
-Installer (Windows):
-
-Click on the installer file, and install JoiningPy.
-
-![Installer Image](https://github.com/devdidacg/JoiningPy/blob/main/images/Installer%20Image%20JoiningPy.png?raw=true)
+git clone https://github.com/devdidacg/JoiningPy
