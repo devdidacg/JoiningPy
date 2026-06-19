@@ -31,4 +31,4 @@ Installer (Windows):
 
 [Releases](https://github.com/devdidacg/JoiningPy/releases)
 
-![Download Image](ruta-o-url-de-la-imagen.png)
+![Download Installer Image](https://github.com/devdidacg/JoiningPy/blob/main/images/download-installer.png?raw=true)
