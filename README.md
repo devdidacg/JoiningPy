@@ -107,13 +107,13 @@ cd JoiningPy
 ### Install Dependencies
 
 ```bash
-python install.py
+python dependencies.py
 ```
 
 or
 
 ```bash
-python3 install.py
+python3 dependencies.py
 ```
 
 ### Start JoiningPy
