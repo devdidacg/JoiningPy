@@ -1,39 +1,53 @@
 # JoiningPy
 
-JoiningPy is a terminal-based Python package manager that allows users to install, remove, search, and manage Python libraries through an interactive menu system.
+JoiningPy is an interactive terminal-based Python package manager that simplifies the installation, removal, discovery, and management of Python libraries.
 
-It removes the need to manually type pip commands and replaces them with a guided interface for managing packages directly from the terminal.
+Instead of manually typing `pip install` and `pip uninstall` commands, users can manage packages through a guided menu-driven interface.
 
-The goal of JoiningPy is to simplify Python dependency management, especially for beginners or users who prefer a structured and visual workflow instead of command-line syntax.
+JoiningPy is designed for beginners, students, and developers who prefer a structured workflow for managing Python dependencies.
 
 ---
 
 ## Features
 
-* Interactive terminal menu system
-* Install multiple Python packages at once
-* Remove multiple Python packages at once
-* Search packages directly from PyPI
-* Install searched packages instantly
-* List installed libraries
-* Number-based selection system
-* Bulk selection using comma-separated input
-* Confirmation prompts before executing actions
-* Easy to extend with new libraries
-* Package information display:
+### Package Management
 
-  * Name
-  * Version
-  * Summary
+* Install multiple predefined Python libraries at once
+* Remove multiple installed libraries at once
+* List all installed Python packages
+* Confirmation prompts before package operations
+* Number-based package selection
+* Bulk selection using comma-separated input
+
+### PyPI Integration
+
+* Search packages directly from PyPI
+* Display package information:
+
+  * Package name
+  * Current version
+  * Package description
+* Install searched packages immediately
+
+### Cross-Platform Support
+
+* Windows
+* Linux
+* macOS
+
+### Automatic Setup
+
+* Optional pip installation during first launch
+* Automatic dependency installation
+* Environment preparation before using JoiningPy
 
 ---
 
-## Supported Libraries
+## Included Libraries
 
-Libraries are grouped by category and can be expanded easily.
+JoiningPy includes a catalog of 40 commonly used Python packages across multiple categories.
 
-<details>
-<summary>Data Science</summary>
+### Data Science
 
 * Pandas
 * NumPy
@@ -41,90 +55,93 @@ Libraries are grouped by category and can be expanded easily.
 * Plotly
 * Seaborn
 
-</details>
-
-<details>
-<summary>Machine Learning & AI</summary>
+### Machine Learning & AI
 
 * Scikit-learn
 * TensorFlow
 * PyTorch
 * Keras
 
-</details>
-
-<details>
-<summary>Web Development</summary>
+### Web Development
 
 * Flask
 * Django
 
-</details>
-
-<details>
-<summary>Automation & Networking</summary>
+### Automation & Networking
 
 * Requests
 * Selenium
 * BeautifulSoup
 
-</details>
-
-<details>
-<summary>Computer Vision & Media</summary>
+### Computer Vision & Media
 
 * OpenCV
 * Pillow
 
-</details>
-
-<details>
-<summary>Database</summary>
+### Database
 
 * SQLAlchemy
 
-</details>
-
-<details>
-<summary>Development Tools</summary>
+### Development Tools
 
 * Pytest
 * Jupyter
 
-</details>
+### Game Development
 
-<details>
-<summary>Game Development</summary>
+* Pygame
 
-* PyGame
-
-</details>
+Additional libraries can be added easily through the configuration files.
 
 ---
 
 ## Installation
 
-### Git (Recommended)
+### Clone the Repository
 
 ```bash
-git clone https://github.com/devdidacg/JoiningPy
+git clone https://github.com/devdidacg/JoiningPy.git
 cd JoiningPy
+```
+
+### Install Dependencies
+
+```bash
+python install.py
+```
+
+or
+
+```bash
+python3 install.py
+```
+
+### Start JoiningPy
+
+```bash
 python main.py
+```
+
+or
+
+```bash
+python3 main.py
 ```
 
 ---
 
-### Windows Installer
+## Windows Installer
 
-Download the latest release:
+Download the latest release from GitHub:
 
 https://github.com/devdidacg/JoiningPy/releases
 
 Steps:
 
-1. Download the installer
-2. Run the setup
-3. Open JoiningPy
+1. Download the latest installer.
+2. Run the installer.
+3. Launch JoiningPy.
+4. Start managing Python packages.
 
 ---
 
@@ -144,23 +161,31 @@ Steps:
 
 ---
 
-## Getting Started
+## First Launch
 
-Launch JoiningPy:
-
-```bash
-python main.py
-```
-
-You will see:
+When starting JoiningPy for the first time:
 
 ```text
-[JoiningPy] (Ready) version by author
-
-Hello, Ready to start? (y/n)
+[JoiningPy] Hello, Ready to start? (y/n)
 ```
 
-Then choose an option:
+If pip is not installed, JoiningPy can install it automatically:
+
+```text
+[JoiningPy] Do you want install pip? (y/n)
+```
+
+Supported installation methods:
+
+| System  | Method                  |
+| ------- | ----------------------- |
+| Windows | get-pip.py              |
+| Linux   | apt install python3-pip |
+| macOS   | get-pip.py              |
+
+---
+
+## Main Menu
 
 ```text
 install
@@ -170,43 +195,47 @@ search
 exit
 ```
 
----
+### Install
 
-## Usage Examples
-
-### Installing packages
-
-Input multiple numbers separated by commas:
+Install one or multiple predefined libraries:
 
 ```text
-1,2,3
+1,2,3,5
 ```
 
-JoiningPy will install selected libraries automatically.
+JoiningPy will install all selected packages.
 
 ---
 
-### Removing packages
+### Remove
+
+Remove one or multiple packages:
 
 ```text
-1,5,7
+4,7,10
 ```
+
+JoiningPy will uninstall all selected packages after confirmation.
 
 ---
 
-### Listing installed packages
+### List Installed Packages
 
 ```text
 list
 ```
 
-Displays all installed Python libraries.
+Displays all installed Python packages using:
+
+```bash
+pip list
+```
 
 ---
 
-### Searching packages
+### Search Packages
 
-Search any package from PyPI:
+Search any package available on PyPI:
 
 ```text
 search
@@ -219,7 +248,7 @@ Example output:
 Library found!
 
 Name: requests
-Version: 2.34.2
+Version: 2.x.x
 Summary: Python HTTP for Humans.
 ```
 
@@ -231,32 +260,21 @@ You want to install this library? (y/n): y
 
 ---
 
-## Search Packages
-
-JoiningPy includes package search powered by PyPI.
-
-Capabilities:
-
-* Search packages by name
-* View package details
-* Install directly after search
-* Return to menu after actions
-
----
-
 ## Project Structure
 
 ```text
 JoiningPy/
 │
 ├── main.py
+├── install.py
 ├── PyLibSearch.py
 ├── variables.py
 ├── requeriments.py
+│
 ├── images/
 │   ├── download-installer.png
 │   ├── Installer Image JoiningPy.png
-│   ├── Source Code Image.png
+│   └── Source Code Image.png
 │
 ├── README.md
 └── LICENSE
@@ -266,12 +284,12 @@ JoiningPy/
 
 ## Requirements
 
-* Python 3.10+
+* Python 3.10 or newer
+* Internet connection
 * pip
-* Internet connection (for package search)
 * Windows, Linux, or macOS
 
-Check version:
+Check your Python version:
 
 ```bash
 python --version
@@ -283,34 +301,38 @@ python --version
 
 Contributions are welcome.
 
-You can help by:
+Possible improvements include:
 
-* Adding new libraries
-* Improving interface
-* Fixing bugs
-* Optimizing installation logic
-* Improving documentation
-* Improving search functionality
+* Adding new predefined packages
+* Improving the terminal interface
+* Refactoring repetitive package logic
+* Better package categorization
+* Enhanced error handling
+* Performance optimizations
+* Additional operating system support
 
 Workflow:
 
 ```text
-fork → clone → edit → commit → pull request
+Fork → Clone → Modify → Commit → Pull Request
 ```
 
 ---
 
 ## Roadmap
 
-* Search filters and package recommendations
-* Version selection for libraries
-* Dependency validation
+### Planned Features
+
 * Dynamic package catalog
+* Category-based filtering
+* Package recommendations
+* Version selection
+* Dependency analysis
+* Progress bars
+* Improved terminal UI
 * Configuration file support
-* Install progress tracking
-* Better UI navigation
-* Better error handling
-* Cross-platform improvements
+* Favorites system
+* Package update checker
 
 ---
 
@@ -324,21 +346,23 @@ MIT License
 Copyright (c) 2026 devdidacg
 
 Permission is hereby granted, free of charge,
-to any person obtaining a copy of this software
-and associated documentation files.
+to any person obtaining a copy of this software and
+associated documentation files.
 ```
 
 ---
 
-## Notes
+## About
 
-JoiningPy is designed to make Python package management easier, faster, and more structured through a simple interactive terminal interface.
+JoiningPy aims to make Python package management easier and more accessible through a simple interactive terminal interface.
 
-Current functionality includes:
+Current capabilities:
 
-* Install
-* Remove
-* List
-* Search
-* PyPI integration
-* Multi-selection package operations
+* Install packages
+* Remove packages
+* List installed packages
+* Search packages on PyPI
+* Install searched packages
+* Multi-package operations
+* Cross-platform support
+* Automatic pip setup
