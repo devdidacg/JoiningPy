@@ -349,8 +349,6 @@ def menu():
 def install():
     print("[JoiningPy] Starting...")
     time.sleep(1.5)
-    askForDirectory = input("In which folder do you want to install the libraries?: ")
-    subprocess.run("pwd", shell=True)
     print("[JoiningPy] Select libraries to install:")
     time.sleep(1.5)
     print("[JoiningPy] 1. " + oneName)
