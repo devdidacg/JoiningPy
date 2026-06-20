@@ -349,6 +349,8 @@ def menu():
 def install():
     print("[JoiningPy] Starting...")
     time.sleep(1.5)
+    askForDirectory = input("In which folder do you want to install the libraries?: ")
+    subprocess.run("pwd", shell=True)
     print("[JoiningPy] Select libraries to install:")
     time.sleep(1.5)
     print("[JoiningPy] 1. " + oneName)
@@ -651,7 +653,6 @@ def system_func():
     global firstTime, system
     if firstTime == True:
         if system == "Windows":
-            subprocess.Popen(["cmd.exe"])
             firstTime = False
             subprocess.run("curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py", shell=True)
             subprocess.run("python get-pip.py", shell=True)
@@ -659,14 +660,12 @@ def system_func():
             menu()
         
         elif system == "Linux":
-            subprocess.Popen(["gnome-terminal"])
             firstTime = False
             subprocess.run("sudo apt install python3-pip", shell=True)
             os.system('cls' if os.name == 'nt' else 'clear')
             menu()
         
         elif system == "Darwin":
-            subprocess.Popen(["open", "-a", "Terminal"])
             firstTime = False
             subprocess.run("curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py",shell=True)
             subprocess.run("python3 get-pip.py", shell=True)
@@ -697,5 +696,4 @@ else:
     print("[JoiningPy] Exiting...")
     time.sleep(1)
     exit()
-
 
